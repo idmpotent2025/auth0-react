@@ -10,6 +10,7 @@ import { NotFoundPage } from "./pages/not-found-page";
 import { ProfilePage } from "./pages/profile-page";
 import { ProtectedPage } from "./pages/protected-page";
 import { PublicPage } from "./pages/public-page";
+import { WebSSOPage } from "./pages/websso-page";
 
 export const App = () => {
   const { isLoading } = useAuth0();
@@ -40,6 +41,7 @@ export const App = () => {
       />
       <Route path="/callback" element={<CallbackPage />} />
       <Route path="*" element={<NotFoundPage />} />
+      <Route path="/websso" component={WebSSOPage} />
     </Routes>
   );
 };
