@@ -59,4 +59,4 @@ return (
   );
 };
 
-//export default WebSSOPage;
+export default WebSSOPage;
