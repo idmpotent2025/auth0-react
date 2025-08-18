@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom";
 import { Container, Button } from "reactstrap";
 import Loading from "../components/Loading";
 
-const JoinMembership = () => {
+const WebSSOPage = () => {
   const { isAuthenticated, isLoading, loginWithRedirect } = useAuth0();
   const location = useLocation();
 
