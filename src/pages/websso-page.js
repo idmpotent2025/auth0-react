@@ -50,4 +50,4 @@ const WebSSOPage = () => {
   );
 };
 
-export default JoinMembership;
+export default WebSSOPage;
