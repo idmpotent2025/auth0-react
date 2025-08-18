@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 import { useLocation } from "react-router-dom";
-import { Container, Button } from "reactstrap";
+//import { Container, Button } from "reactstrap";
 //import Loading from "../components/Loading";
 
 const WebSSOPage = () => {
