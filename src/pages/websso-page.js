@@ -3,6 +3,9 @@ import { useAuth0 } from "@auth0/auth0-react";
 import { useLocation } from "react-router-dom";
 //import { Container, Button } from "reactstrap";
 //import Loading from "../components/Loading";
+import { CodeSnippet } from "../components/code-snippet";
+import { PageLayout } from "../components/page-layout";
+
 
 export const WebSSOPage = () => {
   const { isAuthenticated, isLoading, loginWithRedirect } = useAuth0();
