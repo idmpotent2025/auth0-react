@@ -7,8 +7,6 @@ import { useLocation } from "react-router-dom";
 import { PageLayout } from "../components/page-layout";
 //import { getPublicResource } from "../services/message.service";
 
-
-
 export const WebSSOPage = () => {
   const { isAuthenticated, isLoading, loginWithRedirect } = useAuth0();
   const location = useLocation();
@@ -31,13 +29,11 @@ export const WebSSOPage = () => {
     loginWithRedirect(redirectOptions);
   }, [isAuthenticated, isLoading, loginWithRedirect, location.search]);
 
-  
-
   if (!isAuthenticated) {
     return <p>Redirecting to login...</p>;
   }
-/* <CodeSnippet title="Public Message" code={message} /> */
-return (
+  /* <CodeSnippet title="Public Message" code={message} /> */
+  return (
     <PageLayout>
       <div className="content-layout">
         <h1 id="page-title" className="content__title">
@@ -55,8 +51,8 @@ return (
           </p>
         </div>
       </div>
-    </PageLayout> 
+    </PageLayout>
   );
 };
 
-export default WebSSOPage;
+//export default WebSSOPage;
