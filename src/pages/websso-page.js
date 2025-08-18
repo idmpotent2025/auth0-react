@@ -50,7 +50,7 @@ return (
               external API.
             </span>
             <span>
-              <strong>Any visitor can access this page.</strong>
+              <strong>Any visitor can access this page testers only.</strong>
             </span>
           </p>
         </div>
