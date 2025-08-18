@@ -41,7 +41,7 @@ export const App = () => {
       />
       <Route path="/callback" element={<CallbackPage />} />
       <Route path="*" element={<NotFoundPage />} />
-      <Route path="/websso" component={WebSSOPage} />
+      <Route path="/websso" element={<WebSSOPage/>} />
     </Routes>
   );
 };
