@@ -56,7 +56,7 @@ return (
         </div>
       </div>
     </PageLayout> 
-                );
+  );
 };
 
 //export default WebSSOPage;
