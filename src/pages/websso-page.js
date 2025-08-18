@@ -36,7 +36,7 @@ export const WebSSOPage = () => {
   if (!isAuthenticated) {
     return <p>Redirecting to login...</p>;
   }
-
+/* <CodeSnippet title="Public Message" code={message} /> */
 return (
     <PageLayout>
       <div className="content-layout">
@@ -53,7 +53,6 @@ return (
               <strong>Any visitor can access this page.</strong>
             </span>
           </p>
-         // <CodeSnippet title="Public Message" code={message} />
         </div>
       </div>
     </PageLayout> );
