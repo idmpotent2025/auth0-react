@@ -3,7 +3,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 import { useLocation } from "react-router-dom";
 //import { Container, Button } from "reactstrap";
 //import Loading from "../components/Loading";
-import { CodeSnippet } from "../components/code-snippet";
+//import { CodeSnippet } from "../components/code-snippet";
 import { PageLayout } from "../components/page-layout";
 //import { getPublicResource } from "../services/message.service";
 
@@ -55,7 +55,8 @@ return (
           </p>
         </div>
       </div>
-    </PageLayout> );
+    </PageLayout> 
+                );
 };
 
 //export default WebSSOPage;
