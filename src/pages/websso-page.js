@@ -26,27 +26,50 @@ export const WebSSOPage = () => {
     loginWithRedirect(redirectOptions);
   }, [isAuthenticated, isLoading, loginWithRedirect, location.search]);
 
-  if (isLoading) {
-    return <Loading />;
-  }
+  
 
   if (!isAuthenticated) {
     return <p>Redirecting to login...</p>;
   }
 
-  return (
-    <Container className="mt-5">
-      <h1>Choose a Subscription Plan</h1>
-      <Button color="primary" className="mb-3" onClick={() => alert("Subscribed to Basic!")}>
-        Basic – $5/month
-      </Button>
-      <Button color="secondary" className="mb-3" onClick={() => alert("Subscribed to Pro!")}>
-        Pro – $10/month
-      </Button>
-      <Button color="success" className="mb-3" onClick={() => alert("Subscribed to Premium!")}>
-        Premium – $20/month
-      </Button>
-    </Container>
+ return (
+    <PageLayout>
+      <div className="content-layout">
+        <h1 id="page-title" className="content__title">
+          Profile Page
+        </h1>
+        <div className="content__body">
+          <p id="page-description">
+            <span>
+              You can use the <strong>ID Token</strong> to get the profile
+              information of an authenticated user.
+            </span>
+            <span>
+              <strong>Only authenticated users can access this page.</strong>
+            </span>
+          </p>
+          <div className="profile-grid">
+            <div className="profile__header">
+              <img
+                src={user.picture}
+                alt="Profile"
+                className="profile__avatar"
+              />
+              <div className="profile__headline">
+                <h2 className="profile__title">{user.name}</h2>
+                <span className="profile__description">{user.email}</span>
+              </div>
+            </div>
+            <div className="profile__details">
+              <CodeSnippet
+                title="Decoded ID Token"
+                code={JSON.stringify(user, null, 2)}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </PageLayout>
   );
 };
 
