@@ -15,7 +15,7 @@ const WebSSOPage = () => {
     const token = params.get("session_transfer_token");
 
     const redirectOptions = {
-      appState: { returnTo: "/join-membership" },
+      appState: { returnTo: "/profile" },
       authorizationParams: {},
     };
 
