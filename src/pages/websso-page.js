@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom";
 //import { Container, Button } from "reactstrap";
 //import Loading from "../components/Loading";
 
-const WebSSOPage = () => {
+export const WebSSOPage = () => {
   const { isAuthenticated, isLoading, loginWithRedirect } = useAuth0();
   const location = useLocation();
 
@@ -50,4 +50,4 @@ const WebSSOPage = () => {
   );
 };
 
-export default WebSSOPage;
+//export default WebSSOPage;
