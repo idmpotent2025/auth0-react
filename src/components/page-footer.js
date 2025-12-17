@@ -5,19 +5,19 @@ export const PageFooter = () => {
   const resourceList = [
     {
       path: "https://auth0.com/why-auth0/",
-      label: "Why Auth0",
+      label: "Why PetSmart",
     },
     {
       path: "https://auth0.com/docs/get-started",
-      label: "How It Works",
+      label: "Bring Your Pets",
     },
     {
       path: "https://auth0.com/blog/developers/",
-      label: "Developer Blog",
+      label: "Overnight Hotel",
     },
     {
       path: "https://auth0.com/contact-us",
-      label: "Contact an Expert",
+      label: "Contact a Vet",
     },
   ];
 
