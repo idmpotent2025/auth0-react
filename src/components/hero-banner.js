@@ -1,7 +1,7 @@
 import React from "react";
 
 export const HeroBanner = () => {
-  const logo = "https://cdn.auth0.com/blog/developer-hub/react-logo.svg";
+  const logo = "https://upload.wikimedia.org/wikipedia/commons/0/01/PetSmart.svg";
 
   return (
     <div className="hero-banner hero-banner--pink-yellow">
