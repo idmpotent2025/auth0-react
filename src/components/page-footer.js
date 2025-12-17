@@ -38,7 +38,7 @@ export const PageFooter = () => {
                   Securely implement modern CIAM using Auth0 on any stack and
                   any device&nbsp;
                 </span>
-               //COMMENTED OUT <u>in less than 10 minutes</u>
+               {/* <u>in less than 10 minutes</u> */}
               </PageFooterHyperlink>
             </p>
           </div>
