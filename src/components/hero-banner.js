@@ -19,7 +19,7 @@ export const HeroBanner = () => {
         href="https://auth0.com/developers/hub/code-samples/spa/react-javascript/basic-authentication-with-react-router-6"
         className="button button--secondary"
       >
-        Check out the React code sample →
+        30% Off on all Pet Winter Accessories →
       </a>
     </div>
   );
